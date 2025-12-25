@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        drawer: Drawer(width: 250),
+        drawer: Drawer(width: 200),
         appBar: AppBar(title: Text("Smart tools")),
       ),
     );
