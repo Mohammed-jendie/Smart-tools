@@ -35,6 +35,15 @@ class myhome extends StatelessWidget {
         title: Text("Smart tools"),
         backgroundColor: Colors.cyan,
       ),
+      body: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3), itemCount: 20, 
+      itemBuilder: (context, index) {
+        return boxes();
+      },
+      ),
     );
   }
+}
+
+Widget boxes() {
+  return Container(height: 50, width: 20, color: Colors.red, margin: EdgeInsets.all(20),);
 }
