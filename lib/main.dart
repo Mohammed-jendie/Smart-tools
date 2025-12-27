@@ -16,9 +16,24 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        drawer: Drawer(width: 200),
-        appBar: AppBar(title: Text("Smart tools")),
+      home: myhome(),
+    );
+  }
+}
+
+class myhome extends StatelessWidget {
+  const myhome({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      drawer: Drawer(width: 200),
+    
+      appBar: AppBar(
+        title: Text("Smart tools"),
+        backgroundColor: Colors.cyan,
       ),
     );
   }
