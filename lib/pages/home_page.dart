@@ -47,13 +47,18 @@ Widget boxes(GridItem item, context) {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [Icon(item.icon)],
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [Expanded(child: Icon(item.icon, size: 40))],
+              ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [Center(child: Text(item.title))],
+            SizedBox(height: 10),
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [Expanded(child: Center(child: Text(item.title)))],
+              ),
             ),
           ],
         ),

@@ -15,10 +15,10 @@ class GridItem {
 }
 
 final List<GridItem> gridItems = [
-  GridItem(Icons.calculate_outlined, "Unit ", UnitConverterPage()),
-  GridItem(Icons.calculate_outlined, "Calcl", CalculatorPage()),
-  GridItem(Icons.calculate_outlined, "Stop ", StopWatchPage()),
-  GridItem(Icons.calculate_outlined, "Easy ", EasyNotesPage()),
-  GridItem(Icons.calculate_outlined, "Square", SquareFootagePage()),
-  GridItem(Icons.calculate_outlined, "Date ", DateCalcluatorPage()),
+  GridItem(Icons.calculate_outlined, "Unit Converter", UnitConverterPage()),
+  GridItem(Icons.calculate_outlined, "Calcluator", CalculatorPage()),
+  GridItem(Icons.calculate_outlined, "Stop Watch", StopWatchPage()),
+  GridItem(Icons.calculate_outlined, "Easy notes", EasyNotesPage()),
+  GridItem(Icons.calculate_outlined, "Square Footage", SquareFootagePage()),
+  GridItem(Icons.calculate_outlined, "Date Calcluator", DateCalcluatorPage()),
 ];
