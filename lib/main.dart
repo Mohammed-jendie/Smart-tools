@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_tools/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,36 +15,10 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: myhome(),
+    return MaterialApp(debugShowCheckedModeBanner: false, 
+    home: MyHome()
+
     );
   }
 }
 
-class myhome extends StatelessWidget {
-  const myhome({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: Drawer(width: 200),
-    
-      appBar: AppBar(
-        title: Text("Smart tools"),
-        backgroundColor: Colors.cyan,
-      ),
-      body: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3), itemCount: 20, 
-      itemBuilder: (context, index) {
-        return boxes();
-      },
-      ),
-    );
-  }
-}
-
-Widget boxes() {
-  return Container(height: 50, width: 20, color: Colors.red, margin: EdgeInsets.all(20),);
-}
