@@ -7,12 +7,15 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(width: 230),
+      drawer: Drawer(width: 230, elevation: 10, shadowColor: Colors.cyan),
 
-      appBar: AppBar(title: Text("Smart tools"), backgroundColor: Colors.cyan),
+      appBar: AppBar(
+        title: Text("Smart Tools", style: TextStyle(color: Colors.black)),
+        backgroundColor: const Color.fromARGB(184, 0, 187, 212),
+      ),
+
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          childAspectRatio: 0.9,
           crossAxisCount: 3,
         ),
         itemCount: gridItems.length,
@@ -39,10 +42,11 @@ Widget boxes(GridItem item, context) {
     },
     child: Container(
       decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 99, 99, 99),
+        color: const Color.fromARGB(208, 69, 69, 69),
         borderRadius: BorderRadius.circular(6),
+        border: Border.all(color: const Color.fromARGB(255, 111, 111, 111)),
       ),
-      margin: EdgeInsets.all(20),
+      margin: EdgeInsets.all(6),
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -50,14 +54,29 @@ Widget boxes(GridItem item, context) {
             Expanded(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [Expanded(child: Icon(item.icon, size: 40))],
+                children: [
+                  Expanded(
+                    child: Icon(item.icon, size: 40, color: item.iconColor),
+                  ),
+                ],
               ),
             ),
-            SizedBox(height: 10),
+
             Expanded(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [Expanded(child: Center(child: Text(item.title)))],
+                children: [
+                  Expanded(
+                    child: Center(
+                      child: Text(
+                        item.title,
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
