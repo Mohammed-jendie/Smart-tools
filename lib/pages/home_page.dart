@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:smart_tools/data/gridItems_data.dart';
 import 'package:smart_tools/pages/sidePanel/about.dart';
 
@@ -49,7 +50,9 @@ class MyHome extends StatelessWidget {
             children: [
               Icon(FontAwesomeIcons.share),
               SizedBox(width: 10,),
-              TextButton(onPressed: () {}, child: Text("Share"))
+              TextButton(onPressed: () {
+                SharePlus.instance.share(ShareParams(text: 'Let\'s check our Smart Tools app on Playstore (link)'));
+              }, child: Text("Share"))
             ],
           ),
           SizedBox(height: 5),
