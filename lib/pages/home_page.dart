@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:smart_tools/data/gridItems_data.dart';
+import 'package:smart_tools/pages/sidePanel/about.dart';
 
 class MyHome extends StatelessWidget {
   //const MyHome({super.key});
@@ -30,7 +31,9 @@ class MyHome extends StatelessWidget {
             children: [
               Icon(FontAwesomeIcons.circleInfo),
               SizedBox(width: 10,),
-              TextButton(onPressed: () {}, child: Text("About Us"))
+              TextButton(onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => About()));
+              }, child: Text("About Us"))
             ],
           ),
           SizedBox(height: 5),
