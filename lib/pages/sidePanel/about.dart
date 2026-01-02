@@ -13,10 +13,10 @@ class About extends StatelessWidget {
         children: [
           Image(image: AssetImage("assets/img/app_icon.png")),
           Text("Smart Tools"),
-          Text("made by Mohammad and Davin"),
+          Text("app made by Mohammad and Davin. Inspired by Tools, dev: EZHIL"),
           SizedBox(height: 30,),
           TextButton(onPressed: (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyHome()));
+            Navigator.of(context).pop();
           }, child: Text("Back"))
         ],
       ),
