@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:smart_tools/pages/Random_page.dart';
-import 'package:smart_tools/pages/bmi_page.dart';
-import 'package:smart_tools/pages/calculator_page.dart';
-import 'package:smart_tools/pages/car_loan_page.dart';
-import 'package:smart_tools/pages/counter_page.dart';
-import 'package:smart_tools/pages/easy_notes_page.dart';
-import 'package:smart_tools/pages/inductor_page.dart';
-import 'package:smart_tools/pages/linear_equation_page.dart';
-import 'package:smart_tools/pages/math_economy/base.dart';
-import 'package:smart_tools/pages/morse_page.dart';
-import 'package:smart_tools/pages/quadratic_page.dart';
-import 'package:smart_tools/pages/rbg_page.dart';
-import 'package:smart_tools/pages/resistor_page.dart';
-import 'package:smart_tools/pages/square_footage_page.dart';
-import 'package:smart_tools/pages/stop_watch_page.dart';
-import 'package:smart_tools/pages/unit_converter_page.dart';
+import 'package:smart_tools/pages/tools_pages/base.dart';
+import 'package:smart_tools/pages/tools_pages/bmi_page.dart';
+import 'package:smart_tools/pages/tools_pages/calculator_page.dart';
+import 'package:smart_tools/pages/tools_pages/car_loan_page.dart';
+import 'package:smart_tools/pages/tools_pages/counter_page.dart';
+import 'package:smart_tools/pages/tools_pages/easy_notes_page.dart';
+import 'package:smart_tools/pages/tools_pages/inductor_page.dart';
+import 'package:smart_tools/pages/tools_pages/linear_equation_page.dart';
+import 'package:smart_tools/pages/tools_pages/morse_page.dart';
+import 'package:smart_tools/pages/tools_pages/quadratic_page.dart';
+import 'package:smart_tools/pages/tools_pages/rbg_page.dart';
+import 'package:smart_tools/pages/tools_pages/resistor_page.dart';
+import 'package:smart_tools/pages/tools_pages/square_footage_page.dart';
+import 'package:smart_tools/pages/tools_pages/stop_watch_page.dart';
+import 'package:smart_tools/pages/tools_pages/unit_converter_page.dart';
+
 
 class GridItem {
   final IconData icon;
