@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_tools/pages/Random_page.dart';
+import 'package:smart_tools/pages/tools_pages/random_page.dart';
 import 'package:smart_tools/pages/tools_pages/base.dart';
 import 'package:smart_tools/pages/tools_pages/bmi_page.dart';
 import 'package:smart_tools/pages/tools_pages/calculator_page.dart';

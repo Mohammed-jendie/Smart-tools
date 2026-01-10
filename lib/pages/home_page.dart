@@ -9,13 +9,13 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       drawer: const AppDrawer(),
 
-      appBar: const MyAppBar(), 
+      appBar: const MyAppBar(),
 
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          childAspectRatio: 1.05,
           crossAxisCount: 3,
         ),
         itemCount: gridItems.length,
@@ -42,7 +42,7 @@ Widget boxes(GridItem item, context) {
     },
     child: Container(
       decoration: BoxDecoration(
-        color: const Color.fromARGB(208, 69, 69, 69),
+        color: const Color.fromARGB(153, 69, 69, 69),
         borderRadius: BorderRadius.circular(6),
         border: Border.all(color: const Color.fromARGB(255, 111, 111, 111)),
       ),
